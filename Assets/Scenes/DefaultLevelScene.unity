@@ -199,6 +199,7 @@ GameObject:
   - component: {fileID: 450630077}
   - component: {fileID: 450630076}
   - component: {fileID: 450630080}
+  - component: {fileID: 450630081}
   m_Layer: 9
   m_Name: Mouse
   m_TagString: Untagged
@@ -296,6 +297,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
+--- !u!114 &450630081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 450630075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b31a2c9319be7e8429cd3d338016d4fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  brainType: 1
+  speed: 5
 --- !u!1 &535528516
 GameObject:
   m_ObjectHideFlags: 0
@@ -1149,14 +1164,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1825663907}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b9c4608dd170134dbbb7227a67cf7a4, type: 3}
+  m_Script: {fileID: 11500000, guid: 5a3bdf351a2d23a4a91524d87385fbea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainType: 0
   speed: 5
-  cellHighlight: {fileID: 3100960210414618662, guid: fbd1a4740ed270e44898e291ba566406,
+  cellHighlightPrefab: {fileID: 3100960210414618662, guid: fbd1a4740ed270e44898e291ba566406,
     type: 3}
   catchHighlight: {fileID: 535528516}
-  catchCooldown: 1
 --- !u!54 &1825663913
 Rigidbody:
   m_ObjectHideFlags: 0
