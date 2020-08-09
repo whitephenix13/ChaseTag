@@ -2,21 +2,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Runtime.InteropServices;
+using System;
+using static BoardManager;
 
 public class MouseAIBrain : Brain
 {
-    [DllImport("ChaseTagAI", EntryPoint = "Negate")] //Use this to specify the name of the dll to import as well as the name of the function
-    public static extern bool Negate(bool val);
+   [DllImport("ChaseTagAI", EntryPoint = "MouseAIAction")] //Use this to specify the name of the dll to import as well as the name of the function
+    public static extern void MouseAIAction(CELL_TYPE[] board, int xBoardSize, int yBoardSize, float xMousePos, float zMousePos, float xCatPos, float zCatPos, int actionsSize, float[] outActions);
 
     public override Actions brainUpdate(float[] actionCooldowns, float[] lastActivationsTime)
     {
-        float[] actionsTable = new float[Actions.actionTableLength];
-        actionsTable[0] = Negate(false)?1:0;
-        actionsTable[1] = 0;
-        actionsTable[2] = 0;
-        actionsTable[3] = 0;
-        actionsTable[4] = 0;
+        int boardSize = BoardConfiguration.Instance.boardSize;
+        int actionSize = Brain.Actions.actionTableLength;
+        float xMousePos= BoardManager.Instance.mouse.transform.position.x;
+        float zMousePos= BoardManager.Instance.mouse.transform.position.z;
+        float xCatPos= BoardManager.Instance.cat.transform.position.x;
+        float zCatPos= BoardManager.Instance.cat.transform.position.z;
+        float[] actions = new float[actionSize];
 
-        return new Actions(actionsTable);
+        MouseAIAction(BoardManager.Instance.flatBoard, boardSize, boardSize, xMousePos, zMousePos, xCatPos, zCatPos, actionSize, actions);
+        return new Actions(actions);
     }
+
 }

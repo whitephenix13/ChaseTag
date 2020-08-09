@@ -195,11 +195,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 450630079}
+  - component: {fileID: 450630081}
   - component: {fileID: 450630078}
   - component: {fileID: 450630077}
   - component: {fileID: 450630076}
   - component: {fileID: 450630080}
-  - component: {fileID: 450630081}
   m_Layer: 9
   m_Name: Mouse
   m_TagString: Untagged
@@ -519,10 +519,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Invisible wall west
       objectReference: {fileID: 0}
+    - target: {fileID: 475903245715263210, guid: b1f4c09c659ca17499cb4024e6fcd179,
+        type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 475903245715263210, guid: b1f4c09c659ca17499cb4024e6fcd179,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6522845447532368948, guid: b1f4c09c659ca17499cb4024e6fcd179,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.25
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 6522845447532368948, guid: b1f4c09c659ca17499cb4024e6fcd179,
         type: 3}
@@ -532,7 +542,7 @@ PrefabInstance:
     - target: {fileID: 6522845447532368948, guid: b1f4c09c659ca17499cb4024e6fcd179,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6522845447532368948, guid: b1f4c09c659ca17499cb4024e6fcd179,
         type: 3}
@@ -574,6 +584,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6522845447532368948, guid: b1f4c09c659ca17499cb4024e6fcd179,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6522845447532368948, guid: b1f4c09c659ca17499cb4024e6fcd179,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 6522845447532368948, guid: b1f4c09c659ca17499cb4024e6fcd179,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2448226170780445124, guid: b1f4c09c659ca17499cb4024e6fcd179,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7077508474814107449, guid: b1f4c09c659ca17499cb4024e6fcd179,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1f4c09c659ca17499cb4024e6fcd179, type: 3}
 --- !u!4 &829259964 stripped
@@ -594,10 +629,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Invisible wall south
       objectReference: {fileID: 0}
+    - target: {fileID: 475903245715263210, guid: b1f4c09c659ca17499cb4024e6fcd179,
+        type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 475903245715263210, guid: b1f4c09c659ca17499cb4024e6fcd179,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6522845447532368948, guid: b1f4c09c659ca17499cb4024e6fcd179,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6522845447532368948, guid: b1f4c09c659ca17499cb4024e6fcd179,
         type: 3}
@@ -607,7 +652,7 @@ PrefabInstance:
     - target: {fileID: 6522845447532368948, guid: b1f4c09c659ca17499cb4024e6fcd179,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.25
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 6522845447532368948, guid: b1f4c09c659ca17499cb4024e6fcd179,
         type: 3}
@@ -647,6 +692,31 @@ PrefabInstance:
     - target: {fileID: 6522845447532368948, guid: b1f4c09c659ca17499cb4024e6fcd179,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6522845447532368948, guid: b1f4c09c659ca17499cb4024e6fcd179,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6522845447532368948, guid: b1f4c09c659ca17499cb4024e6fcd179,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 6522845447532368948, guid: b1f4c09c659ca17499cb4024e6fcd179,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2448226170780445124, guid: b1f4c09c659ca17499cb4024e6fcd179,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7077508474814107449, guid: b1f4c09c659ca17499cb4024e6fcd179,
+        type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -734,7 +804,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
-  m_LocalPosition: {x: 0, y: 4.21, z: -9.15}
+  m_LocalPosition: {x: 0, y: 5.84, z: -9.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -752,10 +822,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Invisible wall north
       objectReference: {fileID: 0}
+    - target: {fileID: 475903245715263210, guid: b1f4c09c659ca17499cb4024e6fcd179,
+        type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 475903245715263210, guid: b1f4c09c659ca17499cb4024e6fcd179,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6522845447532368948, guid: b1f4c09c659ca17499cb4024e6fcd179,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6522845447532368948, guid: b1f4c09c659ca17499cb4024e6fcd179,
         type: 3}
@@ -765,7 +845,7 @@ PrefabInstance:
     - target: {fileID: 6522845447532368948, guid: b1f4c09c659ca17499cb4024e6fcd179,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.25
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6522845447532368948, guid: b1f4c09c659ca17499cb4024e6fcd179,
         type: 3}
@@ -805,6 +885,31 @@ PrefabInstance:
     - target: {fileID: 6522845447532368948, guid: b1f4c09c659ca17499cb4024e6fcd179,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6522845447532368948, guid: b1f4c09c659ca17499cb4024e6fcd179,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6522845447532368948, guid: b1f4c09c659ca17499cb4024e6fcd179,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 6522845447532368948, guid: b1f4c09c659ca17499cb4024e6fcd179,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2448226170780445124, guid: b1f4c09c659ca17499cb4024e6fcd179,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7077508474814107449, guid: b1f4c09c659ca17499cb4024e6fcd179,
+        type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1069,10 +1174,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1825663911}
+  - component: {fileID: 1825663912}
   - component: {fileID: 1825663910}
   - component: {fileID: 1825663909}
   - component: {fileID: 1825663908}
-  - component: {fileID: 1825663912}
   - component: {fileID: 1825663913}
   m_Layer: 8
   m_Name: Cat
@@ -1200,10 +1305,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Invisible wall east
       objectReference: {fileID: 0}
+    - target: {fileID: 475903245715263210, guid: b1f4c09c659ca17499cb4024e6fcd179,
+        type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 475903245715263210, guid: b1f4c09c659ca17499cb4024e6fcd179,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6522845447532368948, guid: b1f4c09c659ca17499cb4024e6fcd179,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.25
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6522845447532368948, guid: b1f4c09c659ca17499cb4024e6fcd179,
         type: 3}
@@ -1213,7 +1328,7 @@ PrefabInstance:
     - target: {fileID: 6522845447532368948, guid: b1f4c09c659ca17499cb4024e6fcd179,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6522845447532368948, guid: b1f4c09c659ca17499cb4024e6fcd179,
         type: 3}
@@ -1253,6 +1368,31 @@ PrefabInstance:
     - target: {fileID: 6522845447532368948, guid: b1f4c09c659ca17499cb4024e6fcd179,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6522845447532368948, guid: b1f4c09c659ca17499cb4024e6fcd179,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6522845447532368948, guid: b1f4c09c659ca17499cb4024e6fcd179,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 6522845447532368948, guid: b1f4c09c659ca17499cb4024e6fcd179,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2448226170780445124, guid: b1f4c09c659ca17499cb4024e6fcd179,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7077508474814107449, guid: b1f4c09c659ca17499cb4024e6fcd179,
+        type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

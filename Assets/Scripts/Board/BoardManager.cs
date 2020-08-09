@@ -11,8 +11,20 @@ public class BoardManager : MonoBehaviour
     public GameObject cat;
     public GameObject mouse;
 
-    private CELL_TYPE[,] board; //board as a 2D array to reference static objects
-
+    public CELL_TYPE[][] board { get; private set; } //board as a 2D array to reference static objects
+    public CELL_TYPE[] flatBoard { 
+        get {
+            int xSize = board.Length;
+            int ySize = board[0].Length;
+            CELL_TYPE[] res = new CELL_TYPE[xSize*ySize];
+            for (int i = 0; i < xSize; ++i)
+                for (int j = 0; j < ySize; ++j)
+                    res[i * ySize + j] = board[i][j];
+            return res;
+        }
+        private set { 
+        }
+    }
     public void Awake()
     {
         if (Instance == null)
@@ -22,10 +34,13 @@ public class BoardManager : MonoBehaviour
     public void Start()
     {
         int boardSize = BoardConfiguration.Instance.boardSize;
-        board = new CELL_TYPE[boardSize, boardSize];
+        board = new CELL_TYPE[boardSize][];
         for (int i = 0; i < boardSize; i++)
+        {
+            board[i] = new CELL_TYPE[boardSize];
             for (int j = 0; j < boardSize; j++)
-                board[i, j] = CELL_TYPE.EMPTY;
+                board[i][j] = CELL_TYPE.EMPTY;
+        }
         //TODO: parse game hierarchy to fill the board 
     }
 
