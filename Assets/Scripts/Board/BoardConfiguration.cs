@@ -10,10 +10,42 @@ public class BoardConfiguration : MonoBehaviour
     {
         if (Instance == null)
             Instance = this;
+
     }
-    
+
 
     public float cellSize = 1;// x,z size of the cells of the board
-    public int boardSize = 10; //number pof cells in the board
-    public Vector3 cellCenter = new Vector3(0.5f, 0f, 0.5f);//The center of any cell of the grid
+
+    [SerializeField]
+    private Vector2Int _boardSize;
+
+    public Vector2Int BoardSize {
+        get {
+            return _boardSize;
+        }
+        set {
+            _boardSize = value;
+        }
+    }
+
+
+    private Vector2Int _boardSizeCached;
+
+    /// <summary>
+    /// Offset value to use to convert from world coordinate to cell coordinate
+    /// </summary>
+    private Vector2 _cellOffset;
+    public Vector2 cellOffset { 
+        get {
+            if (!_boardSizeCached.Equals(_boardSize))
+            {
+                _boardSizeCached = _boardSize;
+                _cellOffset = new Vector2((_boardSize.x + 1) % 2 / 2.0f, (_boardSize.y + 1) % 2 / 2.0f);
+            }
+            return _cellOffset;
+        } 
+        private set {
+            _cellOffset = value;
+        } 
+    }
 }

@@ -170,8 +170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellSize: 1
-  boardSize: 10
-  cellCenter: {x: 0.5, y: 0, z: 0.5}
+  _boardSize: {x: 10, y: 10}
 --- !u!114 &147295435
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -33,12 +33,11 @@ public class BoardManager : MonoBehaviour
 
     public void Start()
     {
-        int boardSize = BoardConfiguration.Instance.boardSize;
-        board = new CELL_TYPE[boardSize][];
-        for (int i = 0; i < boardSize; i++)
+        board = new CELL_TYPE[BoardConfiguration.Instance.BoardSize.x][];
+        for (int i = 0; i < BoardConfiguration.Instance.BoardSize.x; i++)
         {
-            board[i] = new CELL_TYPE[boardSize];
-            for (int j = 0; j < boardSize; j++)
+            board[i] = new CELL_TYPE[BoardConfiguration.Instance.BoardSize.y];
+            for (int j = 0; j < BoardConfiguration.Instance.BoardSize.y; j++)
                 board[i][j] = CELL_TYPE.EMPTY;
         }
         //TODO: parse game hierarchy to fill the board 
@@ -73,10 +72,9 @@ public class BoardManager : MonoBehaviour
     /// <param name="obj">Gameobject from which the grid position should be computed</param>
     /// <returns>x and z position of the center of the cell</returns>
     public static Vector2 GridPosition(Vector3 objPosition) {
-        Vector3 cellCenter = BoardConfiguration.Instance.cellCenter;
-        float gridSize = BoardConfiguration.Instance.cellSize;
-        float xSnap = cellCenter.x + (int)Mathf.Round((objPosition.x - cellCenter.x) / gridSize);
-        float zSnap = cellCenter.z + (int)Mathf.Round((objPosition.z - cellCenter.z) / gridSize);
+        float cellSize = BoardConfiguration.Instance.cellSize;
+        float xSnap = BoardConfiguration.Instance.cellOffset.x + (int)Mathf.Round((objPosition.x - BoardConfiguration.Instance.cellOffset.x) / cellSize) * cellSize;
+        float zSnap = BoardConfiguration.Instance.cellOffset.y + (int)Mathf.Round((objPosition.z - BoardConfiguration.Instance.cellOffset.y) / cellSize) * cellSize;
         return new Vector2(xSnap, zSnap);
     }
 
