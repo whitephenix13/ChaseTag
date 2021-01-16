@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class CatAIBrain : Brain
 {
-    public override Actions brainUpdate(float[] actionCooldowns, float[] lastActivationsTime)
+    public CatAIBrain() {
+    }
+    public override Actions brainUpdate(bool isPlayer1)
     {
         float[] actionsTable = new float[Actions.actionTableLength];
         actionsTable[0] = 0;

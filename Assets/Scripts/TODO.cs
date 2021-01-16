@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class TODO : MonoBehaviour
 {
-    //TODO: Add movement to entities
-    //TODO: snap highlight to cell pos (make a cell to world convertor) 
-    //TODO: github integration
+    //TODO: make debug arrow looks better (especially target)
+    //TODO: inverse result of findPath? Or at least make it clear that it returns the path from target (index 0) to current pos
+    //TODO: clean other todo in code
+    //TODO: implements mouse movement based on path
+    //TODO: add walls
 
     // Start is called before the first frame update
     void Start()

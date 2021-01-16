@@ -1,0 +1,85 @@
+v1.0.0
+
+Objectif: avoir une démo jouable et qui rend bien
+
+Note strategie: 
+https://www.youtube.com/watch?v=yYAxbdYHPYw&list=PLAh6we_yqvHFgoT2Ou-6rvHRTnHwT5hg6&index=4
+Tilted cube 
+-> peut tourner autour
+-> peut plonger à travers (dash) mais recovery frame élevée
+-> peut sauter dessus et toucher à travers (mais pour passer il faut resauter/plonger = recovery frame
+-> utiliser les barres pour tourner plus vite
+
+Mountain:
+-> Utilisation pour prendre de la hateur et passer d'une zone à une autre 
+-> ou passer par dessous à travers les barres
+
+Importance des sauts et de leur précisions? (jeu aérien)
+Glissade pour passer sous des obstacles
+Feinte de saut pour forcer l'adversaire à faire une action
+Feinte de direction
+
+La navigation (en solo) doit être très facile!! (pas de cooldown?)
+Le niveau doit être assez étroit de tel sorte que prendre de la vitesse rend les changements de directions et la navigation complexe
+Importance des points d'appuis pour changer ta direction
+Importance de l'inertie 
+
+Bilan strategie: 
+Il faut que le terrain soit "simple" à naviguer pour l'IA: 
+Il peut y avoir: 
+-aucun obstacle
+-Obstacle montable -> boite
+-Obstacle enjembable -> barre basse
+-Obstacle glissable -> mur ouvert en bas
+-montable et glissable -> plateforme
+-enjambable et glissable -> barre à mis hauteur
+Si structure de barre: dash à travers
+Si structure mur: pas possible de traverser
+
+
+Actions:
+courir: vitesse: 75%
+courir depuis 1 sec: +5% jusqu'a 90%  
+slide: vitesse: 95% current speed -> 0% current speed (can't turn while sliding)
+dash: vitesse: 150%
+enjamber: vitesse: 80% current speed 
+monter: vitesse: 65% current speed 
+saut: 100% current speed
+
+Touches: 4 déplacements + 1 saut/enjamber (en fonction de la durée) + 1 glissade  + touche (clic gauche) + dash (clic droit)
+
+Gameplay:
+-cf ci dessus
+
+IA: 
+- Fear strat + utilisation des obstacles en fonction de la position adverse (est ce que l'adversaire me suit ou essaye de me couper la route)
+
+Graphisme: 
+Thème:  
+Style: hyper casu 
+-souris: modèle humain simple (nécessiter de les animer)
+-chat: comme la souris, couleur différente
+-environnement
+-background
+
+Interface/Menu:
+- Debug: objectif de la souris + stratégie en cours (fuir, grimper, esquiver, ...)
+- Score chat/souris 
+- Timer !!! 
+
+Level design:
+- Un niveau regroupant les différents obstacles
+
+Sound design:
+-Aucun 
+
+ Planning: 
+ 1) Design des personnages et animation (simple) pour chacune des actions -> 8h
+ 2) Design des obstacles et du terrain  -> 8h 
+ 3) Implémentation des actions et test sur le terrain (objectif: fluidité) -> 5h
+ 4) IA -> 8h
+ 5) Interface -> 4h 
+ 6) Background + feedback ->4h
+ 
+ Charge estimée: 37h de travail
+
