@@ -29,6 +29,7 @@ public class GameMainManager : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
+        
         if (Instance == null){
             Instance = this;
 
@@ -69,7 +70,6 @@ public class GameMainManager : MonoBehaviour
         chaserScoreText.text = "Chaser: " + chaserScore;
         evaderScoreText.text = "Evader: " + evaderScore;
 
-        //Set timer
         time = TIMER_START_TIME;
     }
 
